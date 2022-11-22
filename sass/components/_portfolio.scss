@@ -1,0 +1,41 @@
+.portfolio {
+  width: 1170px;
+  /* padding: 0 15px; */
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    /* flex-basis: calc((100%-60px) / 3);  przy takim zapisie wyrzuca błąd parsowania*/
+    /* flex-basis: 370px; */
+  }
+  &__item {
+    width: 370px;
+    border-bottom: 1px solid;
+    border-color: var(--grey-color);
+    box-shadow: 0 0 1px 1px var(--grey-color);
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* background-color: rgba(255, 255, 255, 1); */
+
+    &:hover {
+      /* cursor: pointer; */
+      box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    }
+    &:focus-within {
+      /* cursor: pointer; */
+      box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    }
+    &:hover .product__cover {
+      transform: translate(0%, -100%);
+    }
+    &:focus-within .product__cover {
+      transform: translate(0%, -100%);
+      outline: none;
+    }
+  }
+}

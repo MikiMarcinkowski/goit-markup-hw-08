@@ -1,0 +1,93 @@
+.input {
+  position: absolute;
+  display: flex;
+  gap: 12px;
+  padding: 11px 12px;
+
+  &__data {
+    width: 400px;
+    font-size: 12px;
+    color: var(--secondary-black);
+    border: 0;
+    outline: none;
+
+    &:hover {
+      outline: none;
+      /* border: 0; */
+    }
+    &--comment {
+      width: 416px;
+      height: 96px;
+      box-sizing: border-box;
+      resize: none;
+      border: 0;
+      outline: none;
+    }
+    &--comment::placeholder {
+      color: var(--primary-half-color);
+    }
+  }
+  &--comment {
+    outline: none;
+
+    font-size: 12px;
+    color: var(--secondary-black);
+    padding: 12px 16px;
+    padding-bottom: 0;
+    border-radius: 4px;
+    border-color: var(--third-black);
+    box-sizing: border-box;
+  }
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+
+&__title {
+    position: relative;
+    transform: translate(0, -20px);
+    box-sizing: border-box;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+  }
+
+&__frame {
+  border: 1px solid var(--third-black);
+  display: flex;
+  justify-content: left;
+  height: 40px;
+  border-radius: 4px;
+  transition-property: border-color, fill, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+
+
+&:hover,
+&:focus-within {
+  border-color: var(--blue-color);
+  fill: var(--blue-color);
+  box-shadow: 0 0 0 0 var(--blue-color);
+}
+
+&--comment {
+  height: 120px;
+  border-radius: 4px;
+  border: 1px solid var(--third-black);
+  transition-property: border-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+&--comment:hover,
+&--comment:focus-within {
+  border-color: var(--blue-color);
+  box-shadow: 0 0 0 0 var(--blue-color);
+}
+}}

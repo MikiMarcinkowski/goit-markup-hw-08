@@ -1,0 +1,15 @@
+.header {
+  border-bottom: 1px solid var(--grey-color);
+  max-width: 1600px;
+  margin: 0 auto;
+  /* padding: 24px 0px 25px 0px; */
+  &__section {
+    /* padding-top: 0;
+    padding-bottom: 0;
+    width: 1170px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+  }
+}

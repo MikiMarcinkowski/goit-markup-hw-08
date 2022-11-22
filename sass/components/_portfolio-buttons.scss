@@ -1,0 +1,42 @@
+.portfolio-menu {
+  margin-bottom: 50px;
+  padding-top: 0;
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    width: auto;
+  }
+
+  &__button {
+    padding: 6px 22px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.62;
+    color: var(--primary-black);
+    letter-spacing: 0.03em;
+    background-color: var(--white-color);
+    border: none;
+    border-radius: 4px;
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-color: var(--blue-color);
+      color: var(--secondary-color);
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12),
+        0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.01);
+    }
+    &:focus-visible {
+      outline: none;
+      background-color: var(--blue-color);
+      color: var(--secondary-color);
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12),
+        0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.01);
+    }
+  }
+}

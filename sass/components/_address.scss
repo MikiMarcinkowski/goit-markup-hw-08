@@ -1,0 +1,22 @@
+.address {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: inherit;
+  letter-spacing: 0.03em;
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    padding: 0;
+  }
+  &__physical {
+    color: var(--secondary-color);
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: inherit;
+    letter-spacing: 0.03em;
+  }
+}

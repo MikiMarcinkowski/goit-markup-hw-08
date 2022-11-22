@@ -1,0 +1,45 @@
+.checkbox {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  line-height: 171%;
+
+  &__action {
+    display: flex;
+    align-items: center;
+    padding-left: 13px;
+
+    &--checked {
+      position: absolute;
+      visibility: hidden;
+    }
+  }
+
+  &__basic {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+
+    &:checked + .checkbox__action .checkbox__action--unchecked {
+      visibility: hidden;
+    }
+    &:checked + .checkbox__action .checkbox__action--checked {
+      visibility: visible;
+      width: 16px;
+      height: 15px;
+      fill: var(--secondary-color);
+      background-color: var(--blue-color);
+      padding: 3px 1px 2px 2px;
+      border-radius: 2px;
+    }
+  }
+
+  &__statement {
+    padding-left: 8px;
+  }
+
+  &__politicy {
+    text-decoration: underline;
+    color: var(--blue-color);
+  }
+}
