@@ -5,23 +5,30 @@
   padding: 11px 12px;
 
   &__data {
-    width: 400px;
+    width: 300px;
     font-size: 12px;
     color: var(--secondary-black);
     border: 0;
     outline: none;
+
+    @media screen and (min-width: 1200px) {
+      width: 399px;
+    }
 
     &:hover {
       outline: none;
       /* border: 0; */
     }
     &--comment {
-      width: 416px;
+      width: 320px;
       height: 96px;
       box-sizing: border-box;
       resize: none;
       border: 0;
       outline: none;
+      @media screen and (min-width: 1200px) {
+        width: 399px;
+      }
     }
     &--comment::placeholder {
       color: var(--primary-half-color);
@@ -45,7 +52,7 @@
   flex-direction: column;
   gap: 28px;
 
-&__title {
+  &__title {
     position: relative;
     transform: translate(0, -20px);
     box-sizing: border-box;
@@ -54,40 +61,40 @@
     letter-spacing: 0.01em;
   }
 
-&__frame {
-  border: 1px solid var(--third-black);
-  display: flex;
-  justify-content: left;
-  height: 40px;
-  border-radius: 4px;
-  transition-property: border-color, fill, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
-    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  &__frame {
+    border: 1px solid var(--third-black);
+    display: flex;
+    justify-content: left;
+    height: 40px;
+    border-radius: 4px;
+    transition-property: border-color, fill, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+      0 1px 3px 0 rgba(0, 0, 0, 0.12);
 
+    &:hover,
+    &:focus-within {
+      border-color: var(--blue-color);
+      fill: var(--blue-color);
+      box-shadow: 0 0 0 0 var(--blue-color);
+    }
 
-&:hover,
-&:focus-within {
-  border-color: var(--blue-color);
-  fill: var(--blue-color);
-  box-shadow: 0 0 0 0 var(--blue-color);
+    &--comment {
+      height: 120px;
+      border-radius: 4px;
+      border: 1px solid var(--third-black);
+      transition-property: border-color, box-shadow;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2),
+        0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    &--comment:hover,
+    &--comment:focus-within {
+      border-color: var(--blue-color);
+      box-shadow: 0 0 0 0 var(--blue-color);
+    }
+  }
 }
-
-&--comment {
-  height: 120px;
-  border-radius: 4px;
-  border: 1px solid var(--third-black);
-  transition-property: border-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
-    0 1px 3px 0 rgba(0, 0, 0, 0.12);
-}
-
-&--comment:hover,
-&--comment:focus-within {
-  border-color: var(--blue-color);
-  box-shadow: 0 0 0 0 var(--blue-color);
-}
-}}

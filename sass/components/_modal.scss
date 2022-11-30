@@ -13,6 +13,20 @@
   gap: 30px;
   padding: 40px;
 
+  & {
+    @media screen and (max-width: 1199px) {
+      width: 95%;
+      max-width: 450px;
+      height: 95%;
+      max-height: 609px;
+      overflow: scroll;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 528px;
+      height: 581px;
+    }
+  }
+
   &__close-btn {
     position: absolute;
     display: flex;
@@ -26,6 +40,8 @@
     border: 1px solid var(--grey-0-10);
     border-radius: 50%;
     cursor: pointer;
+
+
   }
 
   &__title {
@@ -33,7 +49,10 @@
     text-align: center;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 150%;
+    @media screen and (min-width: 1200px) {
+      line-height: 115%;
+    }
   }
 
   &__send-button {

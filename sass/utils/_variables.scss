@@ -1,4 +1,8 @@
 :root {
+  $media-phone: 768px;
+  --media-tablet: 768px;
+  --media-desktop: 1200px;
+
   --secondary-black: rgba(0, 0, 0, 1);
 
   --third-black: rgba(33, 33, 33, 0.2);
@@ -21,7 +25,6 @@
 
   --semi-white-color: rgba(255, 255, 255, 0.6);
   --secondary-color: rgba(255, 255, 255, 1);
-
 
   --grey-0-06: rgba(0, 0, 0, 0.06);
   --grey-0-02: rgba(0, 0, 0, 0.2);
@@ -49,8 +52,7 @@
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-
-  *,
+*,
 *::after,
 *::before {
   margin: 0;
@@ -79,9 +81,18 @@ ul {
 
 .container {
   margin: 0 auto;
-  width: 1200px;
+  width: 480px;
   padding: 0 15px;
   /* margin-left: 215px; */
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .section {
@@ -93,7 +104,11 @@ ul {
 .section__title {
   color: var(--primary-black);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }

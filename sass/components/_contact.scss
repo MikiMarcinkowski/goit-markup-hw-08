@@ -4,6 +4,14 @@
   gap: 30px;
   margin-left: auto;
 
+  & {
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+  }
+
   &__header {
     color: inherit;
     font-size: 14px;
@@ -36,6 +44,7 @@
   }
 }
 
+
 .footer__contact {
   color: var(--semi-white-color);
   text-decoration: none;
@@ -53,3 +62,61 @@
     outline: none;
   }
 }
+
+
+
+// .contact {
+//   display: flex;
+//   /* flex-direction: row; */
+//   gap: 30px;
+//   margin-left: auto;
+
+//   &__header {
+//     color: inherit;
+//     font-size: 14px;
+//     font-weight: 500;
+//     line-height: 1.14;
+//     text-decoration: none;
+//     letter-spacing: 0.02em;
+//     display: flex;
+//     align-items: center;
+//     transition-property: fill, color;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//     &:hover,
+//     .contact__header:focus {
+//       outline: none;
+//       color: var(--blue-color);
+//       /* stroke: var(--blue-color);
+//   fill: var(--blue-color) */
+//     }
+
+//     &--envelopeIcon {
+//       fill: currentColor;
+//       margin-right: 10px;
+//     }
+//     &--phoneIcon {
+//       fill: currentColor;
+//       margin-right: 10px;
+//     }
+//   }
+// }
+
+// .footer__contact {
+//   color: var(--semi-white-color);
+//   text-decoration: none;
+//   font-family: inherit;
+//   font-size: 14px;
+//   line-height: 1.71;
+//   font-style: inherit;
+//   letter-spacing: 0.03em;
+
+//   &:hover,
+//   &:focus {
+//     color: var(--blue-color);
+//     transition: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//     outline: none;
+//   }
+// }

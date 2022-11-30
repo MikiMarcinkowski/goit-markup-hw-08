@@ -17,8 +17,8 @@
 
   &__basic {
     visibility: hidden;
-    width: 0;
-    height: 0;
+    width: 0px;
+    height: 0px;
 
     &:checked + .checkbox__action .checkbox__action--unchecked {
       visibility: hidden;

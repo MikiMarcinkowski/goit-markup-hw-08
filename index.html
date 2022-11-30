@@ -23,11 +23,85 @@
     <!-- <link href="./css/styles.css" rel="stylesheet" /> -->
   </head>
   <body>
+    <!-- header -->
     <header class="header">
+      <button
+      class="mobile-menu__button toogle-menu"
+      type="button"
+      data-menu-open
+      >
+      <svg class="mobile-menu__open-button-icon" width="40px" height="40px">
+        <use href="./images/icons.svg#mobile-menu"></use>
+      </svg>
+    </button>
+    
+    <!-- mobile-menu -->
+    <div class="mobile-menu__overlay" data-menu>
+      <div class="mobile-menu">
+        <button
+        class="mobile-menu_close-btn d-none"
+        type="button"
+        data-menu-close
+        >
+        <svg
+        class="mobile-menu__close-button-icon"
+        width="40px"
+        height="40px"
+            >
+            <use href="./images/icons.svg#mobile-menu_close-btn"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu__nav">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="./index.html"> Agencja</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="./portfolio.html">
+              Portfolio</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"> Kontakt</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__contact-list">
+            <li class="mobile-menu__contact-list-item">
+              <a class="mobile-menu__contact-list-link" href="tel:+48111111111">
+                +48 111 111 111</a
+                >
+              </li>
+              <li class="mobile-menu__contact-list-item">
+                <a
+                class="mobile-menu__contact-list-link"
+                href="mailto:info@devstudio.com"
+                >
+                info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-menu__social-list">
+              <li class="mobile-menu__social-list-item">
+                <a class="mobile-menu__social-list-link" href="#">Instagram</a>
+              </li>
+              <li class="mobile-menu__social-list-item">
+                <a class="mobile-menu__social-list-link" href="#"> Twitter</a>
+              </li>
+              <li class="mobile-menu__social-list-item">
+                <a class="mobile-menu__social-list-link" href="#"> Facebook</a>
+              </li>
+              <li class="mobile-menu__social-list-item">
+              <a class="mobile-menu__social-list-link" href="#"> Linkedin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- END-mobile-menu -->
+      <!-- header- section -->
       <div class="container header__section">
         <a class="logo logo__text--dark" href="./index.html"
-          ><span class="logo__text--accent">Web</span>Studio</a
+        ><span class="logo__text--accent">Web</span>Studio</a
         >
+        
         <nav class="navigation">
           <ul class="navigation__menu">
             <li class="navigation__item navigation__item--agency">
@@ -35,7 +109,7 @@
             </li>
             <li class="navigation__item">
               <a class="navigation__item--link" href="./portfolio.html"
-                >Portfolio</a
+              >Portfolio</a
               >
             </li>
             <li class="navigation__item">
@@ -43,31 +117,34 @@
             </li>
           </ul>
         </nav>
-
+        
         <ul class="contact">
           <li>
             <a class="contact__header" href="mailto:info@devstudio.com"
-              ><svg
-                class="contact__header--envelopeIcon"
-                width="16"
-                height="12"
-              >
-                <use href="./images/icons.svg#icon-envelope"></use></svg
-              >info@devstudio.com</a
+            ><svg
+            class="contact__header--envelopeIcon"
+            width="16"
+            height="12"
+            >
+            <use href="./images/icons.svg#icon-envelope"></use></svg
+            >info@devstudio.com</a
             >
           </li>
           <li>
             <a class="contact__header" href="tel:+48111111111"
-              ><svg class="contact__header--phoneIcon" width="10" height="16">
-                <use href="./images/icons.svg#icon-phone"></use></svg
+            ><svg class="contact__header--phoneIcon" width="10" height="16">
+              <use href="./images/icons.svg#icon-phone"></use></svg
               >+48 111 111 111</a
-            >
-          </li>
-        </ul>
-      </div>
-    </header>
-
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- END header- section -->
+      </header>
+      <!-- END header -->
+    
     <main>
+      <!-- banner section -->
       <section class="banner">
         <div class="container banner_description">
           <h1 class="banner__title">
@@ -78,34 +155,18 @@
           </button>
         </div>
       </section>
-
+      <!-- END banner section -->
+      
+      <!-- paragraphs section -->
       <section class="section paragraphs">
         <div class="container paragraphs__section">
-          <ul class="paragraphs__icons">
-            <li class="paragraphs__item">
-              <svg width="70px">
-                <use href="./images/icons.svg#icon-antena"></use>
-              </svg>
-            </li>
-            <li class="paragraphs__item">
-              <svg width="70px">
-                <use href="./images/icons.svg#icon-clock"></use>
-              </svg>
-            </li>
-            <li class="paragraphs__item">
-              <svg width="70px">
-                <use href="./images/icons.svg#icon-diagram"></use>
-              </svg>
-            </li>
-            <li class="paragraphs__item">
-              <svg width="70px">
-                <use href="./images/icons.svg#icon-astronaut"></use>
-              </svg>
-            </li>
-          </ul>
-
           <ul class="paragraphs__list">
             <li class="paragraphs__content">
+              <div class="paragraphs__item">
+                <svg width="70px" height="70px">
+                  <use href="./images/icons.svg#icon-antena"></use>
+                </svg>
+              </div>
               <h4 class="paragraphs__title">LOREM IPSUM</h4>
               <p class="paragraphs__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -113,6 +174,11 @@
               </p>
             </li>
             <li class="paragraphs__content">
+              <div class="paragraphs__item">
+                <svg width="70px" height="70px">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
+              </div>
               <h4 class="paragraphs__title">LOREM IPSUM</h4>
               <p class="paragraphs__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -120,6 +186,11 @@
               </p>
             </li>
             <li class="paragraphs__content">
+              <div class="paragraphs__item">
+                <svg width="70px" height="70px">
+                  <use href="./images/icons.svg#icon-diagram"></use>
+                </svg>
+              </div>
               <h4 class="paragraphs__title">LOREM IPSUM</h4>
               <p class="paragraphs__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -127,6 +198,11 @@
               </p>
             </li>
             <li class="paragraphs__content">
+              <div class="paragraphs__item">
+                <svg width="70px" height="70px">
+                  <use href="./images/icons.svg#icon-astronaut"></use>
+                </svg>
+              </div>
               <h4 class="paragraphs__title">LOREM IPSUM</h4>
               <p class="paragraphs__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -136,9 +212,11 @@
           </ul>
         </div>
       </section>
+      <!-- END paragraphs section -->
 
-      <section class="section">
-        <div class="container work">
+      <!-- work section -->
+      <section class="section work">
+        <div class="container work__section">
           <h2 class="section__title work_heading">Czym się zajmujemy</h2>
 
           <ul class="work__list">
@@ -175,7 +253,9 @@
           </ul>
         </div>
       </section>
+      <!-- END work section -->
 
+      <!-- team section -->
       <section class="section team">
         <div class="container team__style">
           <h2 class="section__title team__title">Nasz zespół</h2>
@@ -183,10 +263,8 @@
             <li>
               <figure class="team__item">
                 <img
-                  src="./images/product-designer.jpg"
+                  src="./images/product-daesigner_450x460px.jpg"
                   alt="product designer"
-                  width="270"
-                  height="260"
                 />
                 <figcaption class="team__member">
                   <h4 class="team__name">John Doe</h4>
@@ -248,10 +326,8 @@
             <li>
               <figure class="team__item">
                 <img
-                  src="./images/frontend-developer.jpg"
+                  src="./images/frontend-developer_450x460px.jpg"
                   alt="frontend-developer"
-                  width="270"
-                  height="260"
                 />
                 <figcaption class="team__member">
                   <h4 class="team__name">John Doe</h4>
@@ -311,12 +387,7 @@
             </li>
             <li>
               <figure class="team__item">
-                <img
-                  src="./images/marketing.jpg"
-                  alt="marketing"
-                  width="270"
-                  height="260"
-                />
+                <img src="./images/marketing_450x460px.jpg" alt="marketing" />
                 <figcaption class="team__member">
                   <h4 class="team__name">John Doe</h4>
                   <p class="team__status">Marketing</p>
@@ -376,10 +447,8 @@
             <li>
               <figure class="team__item">
                 <img
-                  src="./images/ui-designer.jpg"
+                  src="./images/ui-designer_450x460px.jpg"
                   alt="ui-designer"
-                  width="270"
-                  height="260"
                 />
                 <figcaption class="team__member">
                   <h4 class="team__name">John Doe</h4>
@@ -440,7 +509,9 @@
           </ul>
         </div>
       </section>
+      <!-- END team section -->
 
+      <!-- customers section -->
       <div class="section">
         <div class="container customers">
           <h2 class="section__title customers-title">Nasi klienci</h2>
@@ -478,8 +549,10 @@
           </ul>
         </div>
       </div>
+      <!-- END customers section -->
     </main>
 
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="container footer__section">
         <div class="footer__heading">
@@ -504,6 +577,7 @@
             </ul>
           </address>
         </div>
+        <!--  socials -footer -->
         <div class="footer-socials">
           <h4 class="footer-socials__title">Dołącz do nas</h4>
           <ul class="footer-socials__list">
@@ -533,7 +607,8 @@
             </li>
           </ul>
         </div>
-
+        <!-- end socials -footer -->
+        <!-- newsletter -->
         <div class="newsletter">
           <h4 class="newsletter__title">Zapisz się do newslettera</h4>
           <form class="newsletter__style">
@@ -552,10 +627,11 @@
               </svg>
             </button>
           </form>
+          <!-- END newsletter -->
         </div>
       </div>
     </footer>
-
+    <!-- END of FOOTER -->
     <!-- ===============MODAL WINDOW WITH BACKDROP================== -->
     <!-- ===============BACKDROP================== -->
     <div class="backdrop modal__is-hidden" data-modal>
@@ -567,102 +643,103 @@
         </button>
         <!-- ===============END_BACKDROP================== -->
         <!-- ===============MODAL_WINDOW================== -->
-        
+
         <h2 class="modal__title">Zostaw swoje dane w formularzu poniżej</h2>
-        
+
         <form class="inputs">
           <fieldset class="inputs__frame">
             <div class="inputs__title name">Imię</div>
             <label class="input" for="user_name">
               <svg width="18px" height="18px">
                 <use href="./images/icons.svg#icon-modal-person"></use></svg
-                ><input
+              ><input
                 class="input__data"
                 type="text"
                 name="name"
                 id="user_name"
                 required
-                /></label>
-              </fieldset>
-              
-              <fieldset class="inputs__frame">
-                <div class="inputs__title">Telefon</div>
-                <label class="input" for="user_phone">
-                  <svg width="18px" height="18px">
-                    <use href="./images/icons.svg#icon-modal-phone"></use></svg
-                    ><input class="input__data" type="tel" id="user_phone" required
-                    /></label>
-                  </fieldset>
-                  
-                  <fieldset class="inputs__frame">
-                    <div class="inputs__title">Email</div>
-                    <label class="input" for="user_mail">
+            /></label>
+          </fieldset>
+
+          <fieldset class="inputs__frame">
+            <div class="inputs__title">Telefon</div>
+            <label class="input" for="user_phone">
+              <svg width="18px" height="18px">
+                <use href="./images/icons.svg#icon-modal-phone"></use></svg
+              ><input class="input__data" type="tel" id="user_phone" required
+            /></label>
+          </fieldset>
+
+          <fieldset class="inputs__frame">
+            <div class="inputs__title">Email</div>
+            <label class="input" for="user_mail">
               <svg width="18px" height="18px">
                 <use href="./images/icons.svg#icon-modal-mail"></use></svg
-                ><input
+              ><input
                 class="input__data"
                 type="email"
                 id="user_mail  "
                 required
-                /></label>
-              </fieldset>
-              
-              <fieldset
-              class="inputs__frame--comment"
-              title="Napisz, co dokładnie Cię interesuje "
-              >
-              <div class="inputs__title">Komentarz</div>
-              <label class="input--comment" for="user_comment">
-                <textarea
+            /></label>
+          </fieldset>
+
+          <fieldset
+            class="inputs__frame--comment"
+            title="Napisz, co dokładnie Cię interesuje "
+          >
+            <div class="inputs__title">Komentarz</div>
+            <label class="input--comment" for="user_comment">
+              <textarea
                 class="input__data--comment"
                 name="comment"
                 id="user_comment"
                 cols="30"
                 placeholder="Wprowadź tekst"
-                ></textarea>
-              </label>
+              ></textarea>
+            </label>
           </fieldset>
           <!-- ==================checkbox====================== -->
           <label
             class="checkbox"
             for="user_agree"
             title="aby przesłać formularz, musisz wyrazić zgodę"
-            >
+          >
             <input
-            class="checkbox__basic"
-            type="checkbox"
-            name="regulations"
-            id="user_agree"
-            required
+              class="checkbox__basic"
+              type="checkbox"
+              name="regulations"
+              id="user_agree"
+              required
             />
             <span class="checkbox__action"
-            ><svg class="checkbox__action--checked" width="11px" height="8px">
-              <use href="./images/icons.svg#icon-modal-checked"></use></svg
+              ><svg class="checkbox__action--checked" width="11px" height="8px">
+                <use href="./images/icons.svg#icon-modal-checked"></use></svg
               ><svg
-              class="checkbox__action--unchecked"
-              width="16px"
-              height="15px"
+                class="checkbox__action--unchecked"
+                width="16px"
+                height="15px"
               >
-              <use href="./images/icons.svg#icon-unchecked"></use>
-            </svg>
-            
-            <span class="checkbox__statement">
-              Oświadczam iż akceptuję
-              <a class="checkbox__politicy" href="#">Regulamin</a> i
-              <a class="checkbox__politicy" href="#">Politykę prywatności.</a>
+                <use href="./images/icons.svg#icon-unchecked"></use>
+              </svg>
+
+              <span class="checkbox__statement">
+                Oświadczam iż akceptuję
+                <a class="checkbox__politicy" href="#">Regulamin</a> i
+                <a class="checkbox__politicy" href="#">Politykę prywatności.</a>
+              </span>
             </span>
-          </span>
-        </label>
-        
-        <!-- ==================END_checkbox====================== -->
-        
-        <button class="modal__send-button" type="submit">Wyślij</button>
-      </form>
+          </label>
+
+          <!-- ==================END_checkbox====================== -->
+
+          <button class="modal__send-button" type="submit">Wyślij</button>
+        </form>
+      </div>
     </div>
-  </div>
-  <!-- ===============END_MODAL_WINDOW================== -->
-  
-  <script src="./modal.js"></script>
+    <!-- ===============END_MODAL_WINDOW================== -->
+
+    <script src="./mobile-menu.js"></script>
+    <script src="./modal.js"></script>
     <!-- ===============END of MODAL WINDOW WITH BACKDROP ================== -->
   </body>
 </html>
