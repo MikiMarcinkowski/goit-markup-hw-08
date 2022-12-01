@@ -23,85 +23,70 @@
     <!-- <link href="./css/styles.css" rel="stylesheet" /> -->
   </head>
   <body>
-   
     <!-- header -->
     <header class="header">
       <!-- mobile-menu -->
-      <!-- buton mobile-menu -->
-      <button
-      class="mobile-menu__button"
-      type="button"
-      data-menu-open
-      >
-      <svg class="mobile-menu__open-button-icon" width="24px" height="16px">
-        <use href="./images/icons.svg#mobile-menu"></use>
-      </svg>
-    </button>
-    <!-- end buton mobile-menu -->
-    
-<!-- mobile menu begin -->
-    <div class="mobile-menu__overlay" data-menu>
-      <div class="mobile-menu ">
-        <button
-          class="mobile-menu__close-btn "
-          type="button"
-        
-          data-menu-close
-        >
-          <svg
-            class="mobile-menu__close-button-icon"
-            width="40px"
-            height="40px"
-          >
-            <use href="./images/icons.svg#mobile-menu_close-btn"></use>
-          </svg>
-        </button>
-        <ul class="mobile-menu__nav">
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__link" href="./index.html"> Agencja</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__link" href="./portfolio.html"> Portfolio</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__link" href="#"> Kontakt</a>
-          </li>
-        </ul>
-        <ul class="mobile-menu__contact-list">
-          <li class="mobile-menu__contact-list-item">
-            <a
-              class="mobile-menu__contact-list-item--phone"
-              href="tel:+48111111111"
+
+      <!-- mobile menu begin -->
+      <div class="mobile-menu__overlay" data-menu>
+        <div class="mobile-menu">
+          <button class="mobile-menu__close-btn" type="button" data-menu-close>
+            <svg
+              class="mobile-menu__close-button-icon"
+              width="40px"
+              height="40px"
             >
-              +48 111 111 111</a
-            >
-          </li>
-          <li class="mobile-menu__contact-list-item">
-            <a
-              class="mobile-menu__contact-list-item--mail"
-              href="mailto:info@devstudio.com"
-            >
-              info@devstudio.com</a
-            >
-          </li>
-        </ul>
-        <ul class="mobile-menu__social-list">
-          <li class="mobile-menu__social-list-item">
-            <a class="mobile-menu__social-list-link" href="#">Instagram</a>
-          </li>
-          <li class="mobile-menu__social-list-item">
-            <a class="mobile-menu__social-list-link" href="#"> Twitter</a>
-          </li>
-          <li class="mobile-menu__social-list-item">
-            <a class="mobile-menu__social-list-link" href="#"> Facebook</a>
-          </li>
-          <li class="mobile-menu__social-list-item">
-            <a class="mobile-menu__social-list-link" href="#"> Linkedin</a>
-          </li>
-        </ul>
+              <use href="./images/icons.svg#mobile-menu_close-btn"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__nav">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="./index.html"> Agencja</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="./portfolio.html">
+                Portfolio</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#"> Kontakt</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__contact-list">
+            <li class="mobile-menu__contact-list-item">
+              <a
+                class="mobile-menu__contact-list-item--phone"
+                href="tel:+48111111111"
+              >
+                +48 111 111 111</a
+              >
+            </li>
+            <li class="mobile-menu__contact-list-item">
+              <a
+                class="mobile-menu__contact-list-item--mail"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__social-list">
+            <li class="mobile-menu__social-list-item">
+              <a class="mobile-menu__social-list-link" href="#">Instagram</a>
+            </li>
+            <li class="mobile-menu__social-list-item">
+              <a class="mobile-menu__social-list-link" href="#"> Twitter</a>
+            </li>
+            <li class="mobile-menu__social-list-item">
+              <a class="mobile-menu__social-list-link" href="#"> Facebook</a>
+            </li>
+            <li class="mobile-menu__social-list-item">
+              <a class="mobile-menu__social-list-link" href="#"> Linkedin</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <!-- END-mobile-menu -->
+      <!-- END-mobile-menu -->
       <!-- header- section -->
       <div class="container header__section">
         <a class="logo logo__text--dark" href="./index.html"
@@ -122,6 +107,17 @@
               <a class="navigation__item--link" href="#">Kontakt</a>
             </li>
           </ul>
+          <!-- buton mobile-menu -->
+          <button class="mobile-menu__button" type="button" data-menu-open>
+            <svg
+              class="mobile-menu__open-button-icon"
+              width="24px"
+              height="16px"
+            >
+              <use href="./images/icons.svg#mobile-menu"></use>
+            </svg>
+          </button>
+          <!-- end buton mobile-menu -->
         </nav>
 
         <ul class="contact">
@@ -295,14 +291,16 @@
                 <source
                   media="(min-width: 480px)"
                   srcset="
-                    ./images/product-designer_450px.webp 1x,
+                    ./images/product-designer_450px.webp    1x,
                     ./images/product-designer_450px@2x.webp 2x
                   "
                   type="image/webp"
                 />
-                <img src="./images/product-designer_270px.webp" alt="product designer" />
+                <img
+                  src="./images/product-designer_270px.webp"
+                  alt="product designer"
+                />
               </picture>
-            
 
               <div class="team__member">
                 <h4 class="team__name">John Doe</h4>
@@ -384,7 +382,10 @@
                   "
                   type="image/webp"
                 />
-                <img src="./images/frontend-dev_270px.webp" alt="frontend developer" />
+                <img
+                  src="./images/frontend-dev_270px.webp"
+                  alt="frontend developer"
+                />
               </picture>
               <div class="team__member">
                 <h4 class="team__name">John Doe</h4>
@@ -705,7 +706,7 @@
         <div class="newsletter">
           <h4 class="newsletter__title">Zapisz się do newslettera</h4>
           <form class="newsletter__style">
-            <label for="user_email">
+            <label class="newsletter__label" for="user_email">
               <input
                 class="newsletter__input"
                 type="email"
@@ -735,7 +736,7 @@
           </svg>
         </button>
         <!-- ===============END_BACKDROP================== -->
-       
+
         <!-- ===============MODAL_WINDOW================== -->
         <h2 class="modal__title">Zostaw swoje dane w formularzu poniżej</h2>
 

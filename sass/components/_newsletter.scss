@@ -4,9 +4,9 @@
   gap: 20px;
   /* padding-top: 12px; */
   text-align: center;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $computer) {
     margin-left: auto;
     text-align: left;
   }
@@ -23,19 +23,23 @@
   }
 
   &__style {
+    
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $computer) {
       flex-direction: row;
       gap: 12px;
     }
   }
-
+&__label {
+  max-width: 450px;
+  
+}
   &__input {
-    width: 100%;
+    width: 320px;
     height: 50px;
     color: var(--secondary-color);
     background-color: var(--dark-color);
@@ -48,10 +52,13 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $phone) {
       width: 450px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $tablet) {
+      width: 450px;
+    }
+    @media screen and (min-width: $computer) {
       width: 358px;
     }
 

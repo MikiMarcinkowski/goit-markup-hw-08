@@ -1,7 +1,7 @@
 .footer {
   padding: 60px 0px 60px 0px;
   /* max-width: 1600px; */
-  // min-width: 480px;
+  min-width: 320px;
   margin: 0 auto;
   background-color: var(--dark-color);
   /* background-size: 1600px; */
@@ -21,17 +21,19 @@
   gap: 60px;
   text-align: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding: 60px 76px;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-around;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $computer) {
     flex-direction: row;
     align-items: baseline;
     text-align: left;
+    justify-content: left;
+    padding: 60px 15px;
   }
 }
 
@@ -42,7 +44,7 @@
   flex-direction: column;
   gap: 20px;
   text-align: center;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $computer) {
     text-align: left;
   }
 }
