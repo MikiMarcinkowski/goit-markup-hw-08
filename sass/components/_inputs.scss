@@ -5,30 +5,26 @@
   padding: 11px 12px;
 
   &__data {
-    width: 300px;
+    max-width: 399px;
     font-size: 12px;
     color: var(--secondary-black);
     border: 0;
     outline: none;
 
-    @media screen and (min-width: 1200px) {
-      width: 399px;
-    }
+    
 
     &:hover {
       outline: none;
       /* border: 0; */
     }
     &--comment {
-      width: 320px;
+      max-width: 400px;
       height: 96px;
       box-sizing: border-box;
       resize: none;
       border: 0;
       outline: none;
-      @media screen and (min-width: 1200px) {
-        width: 399px;
-      }
+    
     }
     &--comment::placeholder {
       color: var(--primary-half-color);

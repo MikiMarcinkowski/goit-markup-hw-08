@@ -1,5 +1,4 @@
 .team {
- 
   background-color: var(--white-color);
   @media screen and (min-width: 1200px) {
     padding: 60px 0;
@@ -25,8 +24,8 @@
   }
 
   &__item {
-    max-width: 450px;
-    margin: 0 auto;
+    // max-width: 450px;
+    margin: 0;
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
       0 1px 3px 0 rgba(0, 0, 0, 0.12);
     border-radius: 0px 0px 4px 4px;
@@ -40,37 +39,32 @@
     }
   }
 
-
-
-
   // proba wstawienia img
   &_photo {
     display: block;
 
-&--product-designer {
-  background-image: url(../images/banner_img_480x400px@2x.webp);
-}
-
-
+    &--product-designer {
+      background-image: url(../images/banner_img_480x400px@2x.webp);
+    }
   }
-// koniec próby
- 
+  // koniec próby
 
   &__member {
     display: flex;
     flex-direction: column;
     gap: 10px;
-  
+    margin: 30px 0;
+    width: auto;
 
-    @media screen and (min-width: $phone) {
-        padding: 30px 122px;
-    padding-bottom: 24px;
+    @media screen and (min-width: 480px) {
+      padding: 30px 122px;
+      padding-bottom: 24px;
     }
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
       padding: 30px 74px;
       padding-bottom: 24px;
     }
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
       padding: 30px 32px;
       padding-bottom: 30px;
     }

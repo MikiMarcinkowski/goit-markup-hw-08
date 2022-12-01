@@ -20,20 +20,19 @@
   align-items: center;
   gap: 60px;
   text-align: center;
-  
+
   @media screen and (min-width: 768px) {
     padding: 60px 76px;
-    flex-direction: row;  
+    flex-direction: row;
     flex-wrap: wrap;
-        align-items: baseline;
-        justify-content: space-around;
-    
-}
+    align-items: baseline;
+    justify-content: space-around;
+  }
   @media screen and (min-width: 1200px) {
-      flex-direction: row;
-        align-items: baseline;
-        text-align: left;
-}
+    flex-direction: row;
+    align-items: baseline;
+    text-align: left;
+  }
 }
 
 .footer__heading {
@@ -43,11 +42,10 @@
   flex-direction: column;
   gap: 20px;
   text-align: center;
-   @media screen and (min-width: 1200px) {
-           text-align: left;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
-}
-
 
 // .footer {
 //   padding: 60px 0px 60px 0px;

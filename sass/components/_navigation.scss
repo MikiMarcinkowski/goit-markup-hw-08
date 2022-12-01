@@ -5,16 +5,16 @@
     display: flex;
     /* figma project indicates gap between nav elements = 46px  */
     gap: 46px;
-    
+
     @media screen and (max-width: 787px) {
       display: none;
     }
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
       margin-left: 93px;
       display: flex;
     }
-    @media screen and (min-width: $computer) {
+    @media screen and (min-width: 1200px) {
       margin-left: 93px;
       display: flex;
     }
@@ -34,7 +34,6 @@
     transition-property: color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
   }
 
   &__item--link:hover,
