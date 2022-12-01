@@ -26,38 +26,34 @@
     <!-- header -->
     <header class="header">
       <button
-      class="mobile-menu__button toogle-menu"
-      type="button"
-      data-menu-open
-      >
-      <svg class="mobile-menu__open-button-icon" width="40px" height="40px">
-        <use href="./images/icons.svg#mobile-menu"></use>
-      </svg>
-    </button>
-    
-    <!-- mobile-menu -->
-    <div class="mobile-menu__overlay" data-menu>
-      <div class="mobile-menu">
-        <button
-        class="mobile-menu_close-btn d-none"
+        class="mobile-menu__button toogle-menu"
         type="button"
-        data-menu-close
-        >
-        <svg
-        class="mobile-menu__close-button-icon"
-        width="40px"
-        height="40px"
+        data-menu-open
+      >
+        <svg class="mobile-menu__open-button-icon" width="40px" height="40px">
+          <use href="./images/icons.svg#mobile-menu"></use>
+        </svg>
+      </button>
+
+      <!-- mobile-menu -->
+      <div class="mobile-menu__overlay" data-menu>
+        <div class="mobile-menu">
+          <button class="mobile-menu__close-btn" type="button" data-menu-close>
+            <svg
+              class="mobile-menu__close-button-icon"
+              width="40px"
+              height="40px"
             >
-            <use href="./images/icons.svg#mobile-menu_close-btn"></use>
-          </svg>
-        </button>
-        <ul class="mobile-menu__nav">
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__link" href="./index.html"> Agencja</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__link" href="./portfolio.html">
-              Portfolio</a
+              <use href="./images/icons.svg#mobile-menu_close-btn"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__nav">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="./index.html"> Agencja</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="./portfolio.html">
+                Portfolio</a
               >
             </li>
             <li class="mobile-menu__item">
@@ -66,30 +62,33 @@
           </ul>
           <ul class="mobile-menu__contact-list">
             <li class="mobile-menu__contact-list-item">
-              <a class="mobile-menu__contact-list-link" href="tel:+48111111111">
+              <a
+                class="mobile-menu__contact-list-item--phone"
+                href="tel:+48111111111"
+              >
                 +48 111 111 111</a
-                >
-              </li>
-              <li class="mobile-menu__contact-list-item">
-                <a
-                class="mobile-menu__contact-list-link"
+              >
+            </li>
+            <li class="mobile-menu__contact-list-item">
+              <a
+                class="mobile-menu__contact-list-item--mail"
                 href="mailto:info@devstudio.com"
-                >
+              >
                 info@devstudio.com</a
-                >
-              </li>
-            </ul>
-            <ul class="mobile-menu__social-list">
-              <li class="mobile-menu__social-list-item">
-                <a class="mobile-menu__social-list-link" href="#">Instagram</a>
-              </li>
-              <li class="mobile-menu__social-list-item">
-                <a class="mobile-menu__social-list-link" href="#"> Twitter</a>
-              </li>
-              <li class="mobile-menu__social-list-item">
-                <a class="mobile-menu__social-list-link" href="#"> Facebook</a>
-              </li>
-              <li class="mobile-menu__social-list-item">
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__social-list">
+            <li class="mobile-menu__social-list-item">
+              <a class="mobile-menu__social-list-link" href="#">Instagram</a>
+            </li>
+            <li class="mobile-menu__social-list-item">
+              <a class="mobile-menu__social-list-link" href="#"> Twitter</a>
+            </li>
+            <li class="mobile-menu__social-list-item">
+              <a class="mobile-menu__social-list-link" href="#"> Facebook</a>
+            </li>
+            <li class="mobile-menu__social-list-item">
               <a class="mobile-menu__social-list-link" href="#"> Linkedin</a>
             </li>
           </ul>
@@ -99,9 +98,9 @@
       <!-- header- section -->
       <div class="container header__section">
         <a class="logo logo__text--dark" href="./index.html"
-        ><span class="logo__text--accent">Web</span>Studio</a
+          ><span class="logo__text--accent">Web</span>Studio</a
         >
-        
+
         <nav class="navigation">
           <ul class="navigation__menu">
             <li class="navigation__item navigation__item--agency">
@@ -109,7 +108,7 @@
             </li>
             <li class="navigation__item">
               <a class="navigation__item--link" href="./portfolio.html"
-              >Portfolio</a
+                >Portfolio</a
               >
             </li>
             <li class="navigation__item">
@@ -117,32 +116,32 @@
             </li>
           </ul>
         </nav>
-        
+
         <ul class="contact">
           <li>
             <a class="contact__header" href="mailto:info@devstudio.com"
-            ><svg
-            class="contact__header--envelopeIcon"
-            width="16"
-            height="12"
-            >
-            <use href="./images/icons.svg#icon-envelope"></use></svg
-            >info@devstudio.com</a
+              ><svg
+                class="contact__header--envelopeIcon"
+                width="16"
+                height="12"
+              >
+                <use href="./images/icons.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
             >
           </li>
           <li>
             <a class="contact__header" href="tel:+48111111111"
-            ><svg class="contact__header--phoneIcon" width="10" height="16">
-              <use href="./images/icons.svg#icon-phone"></use></svg
+              ><svg class="contact__header--phoneIcon" width="10" height="16">
+                <use href="./images/icons.svg#icon-phone"></use></svg
               >+48 111 111 111</a
-              >
-            </li>
-          </ul>
-        </div>
-        <!-- END header- section -->
-      </header>
-      <!-- END header -->
-    
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- END header- section -->
+    </header>
+    <!-- END header -->
+
     <main>
       <!-- banner section -->
       <section class="banner">
@@ -156,7 +155,7 @@
         </div>
       </section>
       <!-- END banner section -->
-      
+
       <!-- paragraphs section -->
       <section class="section paragraphs">
         <div class="container paragraphs__section">
@@ -227,6 +226,8 @@
                 alt="hand on keybord"
                 width="370"
                 height="294"
+                srcset="./images/computer@2x.jpg 2x"
+                sizes="370px"
               />
               <p class="work__title">aplikacje komputerowe</p>
             </li>
@@ -237,6 +238,8 @@
                 alt="remote control"
                 width="370"
                 height="294"
+                srcset="./images/remote-control@2x.jpg 2x"
+                sizes="370px"
               />
               <p class="work__title">aplikacje mobilne</p>
             </li>
@@ -247,6 +250,8 @@
                 alt="tablet"
                 width="370"
                 height="294"
+                srcset="./images/tablet@2x.jpg 2x"
+                sizes="370px"
               />
               <p class="work__title">rozwiązania graficzne</p>
             </li>
@@ -263,8 +268,9 @@
             <li>
               <figure class="team__item">
                 <img
-                  src="./images/product-daesigner_450x460px.jpg"
-                  alt="product designer"
+                alt="product designer"
+                src="./images/product-designer_270px.webp"
+                  
                 />
                 <figcaption class="team__member">
                   <h4 class="team__name">John Doe</h4>
@@ -326,7 +332,7 @@
             <li>
               <figure class="team__item">
                 <img
-                  src="./images/frontend-developer_450x460px.jpg"
+                  src="./images/frontend-dev_270px.webp"
                   alt="frontend-developer"
                 />
                 <figcaption class="team__member">
@@ -387,7 +393,7 @@
             </li>
             <li>
               <figure class="team__item">
-                <img src="./images/marketing_450x460px.jpg" alt="marketing" />
+                <img src="./images/marketing_270px.webp" alt="marketing" />
                 <figcaption class="team__member">
                   <h4 class="team__name">John Doe</h4>
                   <p class="team__status">Marketing</p>
@@ -446,8 +452,10 @@
             </li>
             <li>
               <figure class="team__item">
+                
                 <img
-                  src="./images/ui-designer_450x460px.jpg"
+                  class="team__img"
+                  src="./images/ui-designer_270px.webp"
                   alt="ui-designer"
                 />
                 <figcaption class="team__member">
@@ -672,14 +680,10 @@
 
           <fieldset class="inputs__frame">
             <div class="inputs__title">Email</div>
-            <label class="input" for="user_mail">
+            <label class="input" for="mail">
               <svg width="18px" height="18px">
                 <use href="./images/icons.svg#icon-modal-mail"></use></svg
-              ><input
-                class="input__data"
-                type="email"
-                id="user_mail  "
-                required
+              ><input class="input__data" type="email" id="mail" required
             /></label>
           </fieldset>
 

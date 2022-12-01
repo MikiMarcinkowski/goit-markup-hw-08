@@ -7,6 +7,9 @@
     /* figma project indicates gap between nav elements = 46px  */
     gap: 46px;
 
+    @media screen and (min-width: 768px) {
+      visibility: visible;
+    }
     @media screen and (min-width: 1200px) {
       visibility: visible;
     }
@@ -14,7 +17,7 @@
 
   &__item--link {
     color: var(--primary-black);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     text-decoration: none;
@@ -26,6 +29,7 @@
     transition-property: color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   }
 
   &__item--link:hover,

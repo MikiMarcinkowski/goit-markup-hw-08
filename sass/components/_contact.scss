@@ -7,16 +7,21 @@
   & {
     display: none;
 
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
     @media screen and (min-width: 1200px) {
-        display: flex;
+      display: flex;
     }
   }
 
   &__header {
     color: inherit;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
-    line-height: 1.14;
+    line-height: 117%;
     text-decoration: none;
     letter-spacing: 0.02em;
     display: flex;
@@ -24,6 +29,11 @@
     transition-property: fill, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 114%;
+    }
 
     &:hover,
     .contact__header:focus {
@@ -44,7 +54,6 @@
   }
 }
 
-
 .footer__contact {
   color: var(--semi-white-color);
   text-decoration: none;
@@ -62,8 +71,6 @@
     outline: none;
   }
 }
-
-
 
 // .contact {
 //   display: flex;
