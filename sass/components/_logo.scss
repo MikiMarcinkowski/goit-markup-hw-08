@@ -16,6 +16,10 @@
   }
   &__text--dark {
     color: var(--secondary-black);
+     @media screen and (max-width: $tablet) {
+       padding: 16px 0;
+    }
+    
   }
   &__text--light {
     color: var(--secondary-color);

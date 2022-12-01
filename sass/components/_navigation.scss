@@ -1,17 +1,22 @@
 .navigation {
-  visibility: hidden;
-  margin-left: 93px;
+  display: flex;
   /* flex-grow: 2; */
   &__menu {
     display: flex;
     /* figma project indicates gap between nav elements = 46px  */
     gap: 46px;
-
-    @media screen and (min-width: 768px) {
-      visibility: visible;
+    
+    @media screen and (max-width: 787px) {
+      display: none;
     }
-    @media screen and (min-width: 1200px) {
-      visibility: visible;
+
+    @media screen and (min-width: $tablet) {
+      margin-left: 93px;
+      display: flex;
+    }
+    @media screen and (min-width: $computer) {
+      margin-left: 93px;
+      display: flex;
     }
   }
 
