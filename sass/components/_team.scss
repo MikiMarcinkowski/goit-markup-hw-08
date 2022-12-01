@@ -50,12 +50,12 @@
     flex-direction: column;
     gap: 10px;
     margin: 30px 0;
-    width: auto;
+    // width: auto;
 
-    // @media screen and (min-width: $phone) {
-    //   padding: 30px 0; 
-    //   padding-bottom: 24px;
-    // }
+    @media screen and (max-width: $phone) {
+      padding: 30px 74px; 
+      padding-bottom: 24px;
+    }
     @media screen and (min-width: $tablet) {
       padding: 30px 74px;
       padding-bottom: 24px;
