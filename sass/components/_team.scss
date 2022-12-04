@@ -1,6 +1,6 @@
 .team {
   background-color: var(--white-color);
-  @media screen and (max-width: $computer) {
+  @media screen and (max-width: 1199px) {
     padding: 60px 0;
   }
 
@@ -17,12 +17,9 @@
   }
 
   &__list {
-  
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
-   
-  
   }
 
   &__item {

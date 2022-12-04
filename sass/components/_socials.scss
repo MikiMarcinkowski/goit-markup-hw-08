@@ -30,9 +30,6 @@
 }
 
 .footer-socials {
-  // display: flex;
-  // flex-direction: column;
-  // gap: 20px;
   font-family: inherit;
   font-size: 14px;
   font-weight: 700;
@@ -40,9 +37,8 @@
   letter-spacing: 0.03em;
   color: var(--secondary-color);
   text-transform: uppercase;
-  justify-content: center;
-  text-align: center;
-
+  margin-bottom: 60px;
+text-align: center;
   @media screen and (min-width: $tablet) {
     // margin-left: auto;
 
@@ -53,8 +49,12 @@
     text-align: left;
   }
 
+  &__title {
+    
+    margin-bottom: 20px;
+  }
 
-// ok
+  // ok
   &__list {
     display: flex;
     flex-direction: row;
