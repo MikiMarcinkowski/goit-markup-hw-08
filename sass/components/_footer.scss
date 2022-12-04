@@ -1,8 +1,8 @@
 .footer {
   padding: 60px 0px 60px 0px;
-  /* max-width: 1600px; */
-  min-width: 320px;
-  margin: 0 auto;
+  
+
+  // margin: 0 auto;
   background-color: var(--dark-color);
   /* background-size: 1600px; */
   font-family: inherit;
@@ -10,19 +10,20 @@
   line-height: 1.71;
   font-style: inherit;
   letter-spacing: 0.03em;
-  display: flex;
-  flex-direction: row;
+  // display: flex;
+  // flex-direction: row;
 }
 
 .footer__section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
   gap: 60px;
   text-align: center;
+  // align-content: center;
 
   @media screen and (min-width: $tablet) {
-    padding: 60px 76px;
+    // padding: 60px 76px;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;

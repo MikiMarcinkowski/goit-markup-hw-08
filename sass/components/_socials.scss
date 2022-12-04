@@ -1,6 +1,6 @@
 .team-socials {
   /* margin-top:6px + gap:10px z powyższej sekcji=16px */
-  margin-top: 6px;
+  margin-top: 16px;
   display: flex;
   /* flex-direction: row; */
   justify-content: center;
@@ -30,9 +30,9 @@
 }
 
 .footer-socials {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  // display: flex;
+  // flex-direction: column;
+  // gap: 20px;
   font-family: inherit;
   font-size: 14px;
   font-weight: 700;
@@ -44,7 +44,7 @@
   text-align: center;
 
   @media screen and (min-width: $tablet) {
-    margin-left: auto;
+    // margin-left: auto;
 
     text-align: center;
   }
@@ -53,10 +53,13 @@
     text-align: left;
   }
 
+
+// ok
   &__list {
     display: flex;
     flex-direction: row;
     gap: 10px;
+    justify-content: center;
   }
 
   &__link {

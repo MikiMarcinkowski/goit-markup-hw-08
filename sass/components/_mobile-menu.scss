@@ -79,7 +79,12 @@
   }
 
   &__link {
-    color: var(--blue-color);
+    color: var(--primary-black);
+
+    &:hover,
+    &:focus {
+      color: var(--blue-color);
+    }
   }
 
   &__contact-list {

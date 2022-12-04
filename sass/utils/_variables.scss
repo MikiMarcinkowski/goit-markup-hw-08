@@ -62,7 +62,7 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 
-  margin: 0 auto;
+  // margin: 0 auto;
 }
 
 a {
@@ -76,9 +76,10 @@ ul {
 }
 
 .container {
-  margin: 0 auto;
-  min-width: 320px;
-  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 
   /* margin-left: 215px; */
   @media screen and (min-width: 480px) {
@@ -94,7 +95,7 @@ ul {
 
 .section {
   /* width: 1170px; */
-
+margin: 0 auto;
   padding: 94px 0;
 }
 
@@ -108,6 +109,15 @@ ul {
     font-size: 36px;
     line-height: 1.16;
   }
+}
+
+.work__photo,
+.team__photo,
+.portfolio__photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
 }
 
 /* width for diferent media */

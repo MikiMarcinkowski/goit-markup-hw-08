@@ -1,8 +1,10 @@
 .banner {
   padding-top: 118px;
+  padding-bottom: 118px;
   max-width: 1600px;
   margin: 0 auto;
-  min-width: 320px;
+  
+  text-align: center;
 
   background-color: var(--second-dark);
   background-repeat: no-repeat;
@@ -13,16 +15,7 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/banner_img_480x400px.jpg);
-  padding-bottom: 118px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  gap: 30px;
-  //   /* padding-left: 452px;
-  //         padding-right: 452px; */
+
   & {
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -75,7 +68,6 @@
   }
 
   &__title {
-    max-width: 365px;
     margin: 0 auto;
     margin-bottom: 30px;
     color: var(--secondary-color);
@@ -83,19 +75,19 @@
     font-size: 26px;
     line-height: 162%;
     letter-spacing: 0.06em;
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $phone) {
+      width: 365px;
     }
     @media screen and (min-width: $computer) {
       font-size: 44px;
       line-height: 136%;
-      max-width: 696px;
-      
+    width: 696px;
     }
   }
 
   &__button {
     margin: 0;
-    text-align: center;
+    // text-align: center;
     padding: 10px 41px 10px 42px;
     cursor: pointer;
     font-family: inherit;
